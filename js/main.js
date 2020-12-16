@@ -188,19 +188,6 @@ document.getElementById("attack-table").addEventListener("click", function () {
   root.style.setProperty("--bg-color", x);
 });
 
-document.getElementById("openNav").addEventListener("click", function () {
-  document.getElementById("mySidebar").style.width ="250px";
-  document.getElementById("mySidebar").style.display = "flex";
-  document.getElementById("openNav").style.display = 'none';
-
-});
-
-document.getElementById("closeNav").addEventListener("click", function () {
-  document.getElementById("main").style.marginLeft = "0%";
-  document.getElementById("mySidebar").style.display = "hidden";
-  document.getElementById("mySidebar").style.width ="0";
-  document.getElementById("openNav").style.display = "flex";
-});
 
 
 

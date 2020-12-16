@@ -108,66 +108,13 @@ body {
 }
 
 
-.sidebar {
-
-  flex-direction: column;
-  font-size: 25px;
-  overflow: hidden;
-  display: none;
-
-
-  transition-property: width;
-  -moz-transition-property: width; /* Firefox 4 */
-  -webkit-transition-property: width; /* Safari and Chrome */
-  -o-transition-property: width; /* Opera */
-
-  transition-duration: 250ms;
-  -moz-transition-duration: 250ms; /* Firefox 4 */
-  -webkit-transition-duration: 250ms; /* Safari and Chrome */
-  -o-transition-duration: 250ms; /* Opera */
-
-  transition-timing-function: ease-in-out;
-  -moz-transition-timing-function: ease-in-out; /* Firefox 4 */
-  -webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
-  -o-transition-timing-function: ease-in-out; /* Opera */
-}
-
-.sidebar > a {
-  cursor: pointer;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  color: white;
-
-}
-
 .main {
   margin-left: 0;
-}
-
-.openNav {
-  margin: 0;
-  padding: 19px 16px;
-  display: flex;
-  /*position: absolute;*/
-  top: 0;
-  left: 0;
-  background-color: grey;
-}
-
-.closeNav {
-  align-content: center;
-  vertical-align: center;
-}
-
-.openNav:hover .sidebar {
-  width: 100%;
 }
 
 .flex-container {
   display: flex;
 }
-
 .title {
   align-content: center;
   flex-direction: column;
@@ -198,11 +145,21 @@ body {
 
 .stat-block {
   margin-top: 20px;
+  align-content: center;
+  vertical-align: center;
+}
+
+.stat-block > * {
+  position: center;
 }
 
 .ability-scores {
   margin-top: 20px;
+
 }
+
+
+
 
 .ability-scores > table {
   margin: auto;
@@ -215,6 +172,12 @@ body {
 
 .ability-scores {
   background: var(--bg-color);
+}
+
+.shadow {
+  -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+  filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+  /* Similar syntax to box-shadow */
 }
 
 * {
@@ -234,7 +197,7 @@ body {
   left: 10px;
   border-radius: 50%;
   overflow: hidden;
-  background: grey;
+  /*background: grey;*/
   position: absolute;
   will-change: transform;
 }
@@ -295,8 +258,9 @@ li {
 }
 
 li:hover {
-  background: #555;
   color: #FFF;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 .item--expanded {
