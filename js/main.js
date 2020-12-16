@@ -192,6 +192,7 @@ document.getElementById("attack-table").addEventListener("click", function () {
 
 
 
+
 class Expando {
   constructor () {
     this._el = document.querySelector('.js-expando');
