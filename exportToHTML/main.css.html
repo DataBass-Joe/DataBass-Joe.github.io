@@ -1,0 +1,544 @@
+<html>
+<head>
+<title>main.css</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #9933cc;}
+.s1 { color: #ffffff;}
+.s2 { color: #ff6600;}
+.s3 { color: #99cc99; font-weight: bold; font-style: italic;}
+.s4 { color: #ffffff;}
+.s5 { color: #6897bb;}
+.s6 { color: #cc7832;}
+.s7 { color: #ffffff;}
+.s8 { color: #68e868; font-weight: bold;}
+.s9 { color: #e3e3ff; font-weight: bold;}
+.s10 { color: #66ff00; font-weight: bold;}
+.s11 { color: #cc7832; font-weight: bold;}
+.s12 { color: #ff6600; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#000000">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.css</font>
+</center></td></tr></table>
+<pre><span class="s0">/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */</span>
+
+<span class="s0">/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */</span>
+<span class="s0">/* 
+ * What follows is the result of much research on cross-browser styling. 
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal, 
+ * Kroc Camen, and the H5BP dev community and team. 
+ */</span>
+
+<span class="s0">/* ========================================================================== 
+   Base styles: opinionated defaults 
+   ========================================================================== */</span>
+
+<span class="s2">html </span><span class="s1">{</span>
+  <span class="s3">color</span><span class="s4">: </span><span class="s5">#222</span><span class="s6">;</span>
+  <span class="s3">font-size</span><span class="s4">: </span><span class="s7">1</span><span class="s8">em</span><span class="s6">;</span>
+  <span class="s3">line-height</span><span class="s4">: </span><span class="s7">1.4</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s0">/* 
+ * Remove text-shadow in selection highlight: 
+ * https://twitter.com/miketaylr/status/12228805301 
+ * 
+ * Vendor-prefixed and regular ::selection selectors cannot be combined: 
+ * https://stackoverflow.com/a/16982510/7133471 
+ * 
+ * Customize the background color to match your design. 
+ */</span>
+
+<span class="s4">::</span><span class="s2">-moz-selection </span><span class="s1">{</span>
+  <span class="s3">background</span><span class="s4">: </span><span class="s5">#b3d4fc</span><span class="s6">;</span>
+  <span class="s3">text-shadow</span><span class="s4">: </span><span class="s8">none</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s4">::</span><span class="s2">selection </span><span class="s1">{</span>
+  <span class="s3">background</span><span class="s4">: </span><span class="s5">#b3d4fc</span><span class="s6">;</span>
+  <span class="s3">text-shadow</span><span class="s4">: </span><span class="s8">none</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s0">/* 
+ * A better looking default horizontal rule 
+ */</span>
+
+<span class="s2">hr </span><span class="s1">{</span>
+  <span class="s3">display</span><span class="s4">: </span><span class="s8">block</span><span class="s6">;</span>
+  <span class="s3">height</span><span class="s4">: </span><span class="s7">1</span><span class="s8">px</span><span class="s6">;</span>
+  <span class="s3">border</span><span class="s4">: </span><span class="s7">0</span><span class="s6">;</span>
+  <span class="s3">border-top</span><span class="s4">: </span><span class="s7">1</span><span class="s8">px solid </span><span class="s5">#ccc</span><span class="s6">;</span>
+  <span class="s3">margin</span><span class="s4">: </span><span class="s7">1</span><span class="s8">em </span><span class="s7">0</span><span class="s6">;</span>
+  <span class="s3">padding</span><span class="s4">: </span><span class="s7">0</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s0">/* 
+ * Remove the gap between audio, canvas, iframes, 
+ * images, videos and the bottom of their containers: 
+ * https://github.com/h5bp/html5-boilerplate/issues/440 
+ */</span>
+
+<span class="s2">audio</span><span class="s6">,</span>
+<span class="s2">canvas</span><span class="s6">,</span>
+<span class="s2">iframe</span><span class="s6">,</span>
+<span class="s2">img</span><span class="s6">,</span>
+<span class="s2">svg</span><span class="s6">,</span>
+<span class="s2">video </span><span class="s1">{</span>
+  <span class="s3">vertical-align</span><span class="s4">: </span><span class="s8">middle</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s0">/* 
+ * Remove default fieldset styles. 
+ */</span>
+
+<span class="s2">fieldset </span><span class="s1">{</span>
+  <span class="s3">border</span><span class="s4">: </span><span class="s7">0</span><span class="s6">;</span>
+  <span class="s3">margin</span><span class="s4">: </span><span class="s7">0</span><span class="s6">;</span>
+  <span class="s3">padding</span><span class="s4">: </span><span class="s7">0</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s0">/* 
+ * Allow only vertical resizing of textareas. 
+ */</span>
+
+<span class="s2">textarea </span><span class="s1">{</span>
+  <span class="s3">resize</span><span class="s4">: </span><span class="s8">vertical</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s0">/* ========================================================================== 
+   Author's custom styles 
+   ========================================================================== */</span>
+
+<span class="s2">div </span><span class="s1">{</span>
+  <span class="s3">box-shadow</span><span class="s4">: </span><span class="s7">0 8</span><span class="s8">px </span><span class="s7">16</span><span class="s8">px </span><span class="s7">0 </span><span class="s9">rgba</span><span class="s1">(</span><span class="s7">0</span><span class="s6">, </span><span class="s7">0</span><span class="s6">, </span><span class="s7">0</span><span class="s6">, </span><span class="s7">0.2</span><span class="s1">)</span><span class="s6">;</span>
+
+<span class="s1">}</span>
+
+<span class="s2">body </span><span class="s1">{</span>
+  <span class="s3">color</span><span class="s4">: </span><span class="s8">white</span><span class="s6">;</span>
+
+  <span class="s3">background-image</span><span class="s4">: </span><span class="s9">url</span><span class="s1">(</span><span class="s10">&quot;https://cdna.artstation.com/p/assets/images/images/005/101/034/large/j-jp-.jpg?1488464525&quot;</span><span class="s1">)</span><span class="s6">;</span>
+  <span class="s3">background-size</span><span class="s4">: </span><span class="s7">100</span><span class="s8">vmax</span><span class="s6">;</span>
+  <span class="s3">background-repeat</span><span class="s4">: </span><span class="s8">no-repeat</span><span class="s6">;</span>
+  <span class="s3">background-color</span><span class="s4">: </span><span class="s5">#f36b42</span><span class="s6">;</span>
+  <span class="s3">background-position</span><span class="s4">: </span><span class="s8">center</span><span class="s6">;</span>
+  <span class="s3">background-attachment</span><span class="s4">: </span><span class="s8">fixed</span><span class="s6">;</span>
+
+
+  <span class="s3">display</span><span class="s4">: </span><span class="s8">flex</span><span class="s6">;</span>
+  <span class="s3">flex-direction</span><span class="s4">: </span><span class="s8">row</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+
+<span class="s1">.</span><span class="s2">sidebar </span><span class="s1">{</span>
+
+  <span class="s3">flex-direction</span><span class="s4">: </span><span class="s8">column</span><span class="s6">;</span>
+  <span class="s3">font-size</span><span class="s4">: </span><span class="s7">25</span><span class="s8">px</span><span class="s6">;</span>
+  <span class="s3">overflow</span><span class="s4">: </span><span class="s8">hidden</span><span class="s6">;</span>
+  <span class="s3">display</span><span class="s4">: </span><span class="s8">none</span><span class="s6">;</span>
+
+
+  <span class="s3">transition-property</span><span class="s4">: </span><span class="s8">width</span><span class="s6">;</span>
+  <span class="s3">-moz-transition-property</span><span class="s4">: </span><span class="s8">width</span><span class="s6">; </span><span class="s0">/* Firefox 4 */</span>
+  <span class="s3">-webkit-transition-property</span><span class="s4">: </span><span class="s8">width</span><span class="s6">; </span><span class="s0">/* Safari and Chrome */</span>
+  <span class="s3">-o-transition-property</span><span class="s4">: </span><span class="s8">width</span><span class="s6">; </span><span class="s0">/* Opera */</span>
+
+  <span class="s3">transition-duration</span><span class="s4">: </span><span class="s7">250</span><span class="s8">ms</span><span class="s6">;</span>
+  <span class="s3">-moz-transition-duration</span><span class="s4">: </span><span class="s7">250</span><span class="s8">ms</span><span class="s6">; </span><span class="s0">/* Firefox 4 */</span>
+  <span class="s3">-webkit-transition-duration</span><span class="s4">: </span><span class="s7">250</span><span class="s8">ms</span><span class="s6">; </span><span class="s0">/* Safari and Chrome */</span>
+  <span class="s3">-o-transition-duration</span><span class="s4">: </span><span class="s7">250</span><span class="s8">ms</span><span class="s6">; </span><span class="s0">/* Opera */</span>
+
+  <span class="s3">transition-timing-function</span><span class="s4">: </span><span class="s8">ease-in-out</span><span class="s6">;</span>
+  <span class="s3">-moz-transition-timing-function</span><span class="s4">: </span><span class="s8">ease-in-out</span><span class="s6">; </span><span class="s0">/* Firefox 4 */</span>
+  <span class="s3">-webkit-transition-timing-function</span><span class="s4">: </span><span class="s8">ease-in-out</span><span class="s6">; </span><span class="s0">/* Safari and Chrome */</span>
+  <span class="s3">-o-transition-timing-function</span><span class="s4">: </span><span class="s8">ease-in-out</span><span class="s6">; </span><span class="s0">/* Opera */</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">sidebar &gt; a </span><span class="s1">{</span>
+  <span class="s3">cursor</span><span class="s4">: </span><span class="s8">pointer</span><span class="s6">;</span>
+  <span class="s3">padding</span><span class="s4">: </span><span class="s7">12</span><span class="s8">px </span><span class="s7">16</span><span class="s8">px</span><span class="s6">;</span>
+  <span class="s3">text-decoration</span><span class="s4">: </span><span class="s8">none</span><span class="s6">;</span>
+  <span class="s3">display</span><span class="s4">: </span><span class="s8">block</span><span class="s6">;</span>
+  <span class="s3">color</span><span class="s4">: </span><span class="s8">white</span><span class="s6">;</span>
+
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">main </span><span class="s1">{</span>
+  <span class="s3">margin-left</span><span class="s4">: </span><span class="s7">0</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">openNav </span><span class="s1">{</span>
+  <span class="s3">margin</span><span class="s4">: </span><span class="s7">0</span><span class="s6">;</span>
+  <span class="s3">padding</span><span class="s4">: </span><span class="s7">19</span><span class="s8">px </span><span class="s7">16</span><span class="s8">px</span><span class="s6">;</span>
+  <span class="s3">display</span><span class="s4">: </span><span class="s8">flex</span><span class="s6">;</span>
+  <span class="s0">/*position: absolute;*/</span>
+  <span class="s3">top</span><span class="s4">: </span><span class="s7">0</span><span class="s6">;</span>
+  <span class="s3">left</span><span class="s4">: </span><span class="s7">0</span><span class="s6">;</span>
+  <span class="s3">background-color</span><span class="s4">: </span><span class="s8">grey</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">closeNav </span><span class="s1">{</span>
+  <span class="s3">align-content</span><span class="s4">: </span><span class="s8">center</span><span class="s6">;</span>
+  <span class="s3">vertical-align</span><span class="s4">: </span><span class="s8">center</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">openNav</span><span class="s4">:</span><span class="s2">hover </span><span class="s1">.</span><span class="s2">sidebar </span><span class="s1">{</span>
+  <span class="s3">width</span><span class="s4">: </span><span class="s7">100</span><span class="s2">%</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">flex-container </span><span class="s1">{</span>
+  <span class="s3">display</span><span class="s4">: </span><span class="s8">flex</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">title </span><span class="s1">{</span>
+  <span class="s3">align-content</span><span class="s4">: </span><span class="s8">center</span><span class="s6">;</span>
+  <span class="s3">flex-direction</span><span class="s4">: </span><span class="s8">column</span><span class="s6">;</span>
+  <span class="s3">vertical-align</span><span class="s4">: </span><span class="s8">center</span><span class="s6">;</span>
+
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">level </span><span class="s1">{</span>
+  <span class="s3">align-content</span><span class="s4">: </span><span class="s8">center</span><span class="s6">;</span>
+  <span class="s3">flex-direction</span><span class="s4">: </span><span class="s8">row</span><span class="s6">;</span>
+  <span class="s3">vertical-align</span><span class="s4">: </span><span class="s8">center</span><span class="s6">;</span>
+  <span class="s3">font-size</span><span class="s4">: </span><span class="s7">10</span><span class="s8">px</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">flex-container &gt; div </span><span class="s1">{</span>
+  <span class="s3">margin</span><span class="s4">: </span><span class="s7">10</span><span class="s8">px</span><span class="s6">;</span>
+  <span class="s3">padding</span><span class="s4">: </span><span class="s7">20</span><span class="s8">px</span><span class="s6">;</span>
+  <span class="s3">font-size</span><span class="s4">: </span><span class="s7">30</span><span class="s8">px</span><span class="s6">;</span>
+  <span class="s3">flex-direction</span><span class="s4">: </span><span class="s8">row</span><span class="s6">;</span>
+
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">level </span><span class="s1">{</span>
+  <span class="s3">margin</span><span class="s4">: </span><span class="s7">10</span><span class="s8">px</span><span class="s6">;</span>
+  <span class="s3">font-size</span><span class="s4">: </span><span class="s7">20</span><span class="s8">px</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+
+<span class="s1">.</span><span class="s2">stat-block </span><span class="s1">{</span>
+  <span class="s3">margin-top</span><span class="s4">: </span><span class="s7">20</span><span class="s8">px</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">ability-scores </span><span class="s1">{</span>
+  <span class="s3">margin-top</span><span class="s4">: </span><span class="s7">20</span><span class="s8">px</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">ability-scores &gt; table </span><span class="s1">{</span>
+  <span class="s3">margin</span><span class="s4">:</span><span class="s8">auto</span><span class="s6">;</span>
+  <span class="s3">table-layout</span><span class="s4">: </span><span class="s8">revert</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+
+<span class="s4">:</span><span class="s2">root </span><span class="s1">{</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">ability-scores </span><span class="s1">{</span>
+  <span class="s3">background</span><span class="s4">: </span><span class="s9">var</span><span class="s1">(</span><span class="s2">--bg-color</span><span class="s1">)</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">* {</span>
+  <span class="s3">box-sizing</span><span class="s4">: </span><span class="s8">border-box</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">expando </span><span class="s1">{</span>
+  <span class="s3">border-radius</span><span class="s4">: </span><span class="s7">2</span><span class="s8">px</span><span class="s6">;</span>
+  <span class="s3">overflow</span><span class="s4">: </span><span class="s8">hidden</span><span class="s6">;</span>
+  <span class="s3">top</span><span class="s4">: </span><span class="s7">20</span><span class="s8">px</span><span class="s6">;</span>
+  <span class="s3">left</span><span class="s4">: </span><span class="s7">20</span><span class="s8">px</span><span class="s6">;</span>
+  <span class="s3">will-change</span><span class="s4">: </span><span class="s2">transform</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">expando__inner </span><span class="s1">{</span>
+  <span class="s3">top</span><span class="s4">: </span><span class="s7">10</span><span class="s8">px</span><span class="s6">;</span>
+  <span class="s3">left</span><span class="s4">: </span><span class="s7">10</span><span class="s8">px</span><span class="s6">;</span>
+  <span class="s3">border-radius</span><span class="s4">: </span><span class="s7">50</span><span class="s2">%</span><span class="s6">;</span>
+  <span class="s3">overflow</span><span class="s4">: </span><span class="s8">hidden</span><span class="s6">;</span>
+  <span class="s3">background</span><span class="s4">: </span><span class="s8">grey</span><span class="s6">;</span>
+  <span class="s3">position</span><span class="s4">: </span><span class="s8">absolute</span><span class="s6">;</span>
+  <span class="s3">will-change</span><span class="s4">: </span><span class="s2">transform</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">expando__inner-inverter </span><span class="s1">{</span>
+  <span class="s3">will-change</span><span class="s4">: </span><span class="s2">transform</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">expando__btn </span><span class="s1">{</span>
+  <span class="s3">width</span><span class="s4">: </span><span class="s7">48</span><span class="s8">px</span><span class="s6">;</span>
+  <span class="s3">height</span><span class="s4">: </span><span class="s7">48</span><span class="s8">px</span><span class="s6">;</span>
+  <span class="s3">position</span><span class="s4">: </span><span class="s8">absolute</span><span class="s6">;</span>
+  <span class="s3">top</span><span class="s4">: </span><span class="s7">0</span><span class="s6">;</span>
+  <span class="s3">left</span><span class="s4">: </span><span class="s7">0</span><span class="s6">;</span>
+  <span class="s3">background</span><span class="s4">: </span><span class="s8">none</span><span class="s6">;</span>
+  <span class="s3">border</span><span class="s4">: </span><span class="s8">none</span><span class="s6">;</span>
+  <span class="s3">outline</span><span class="s4">: </span><span class="s8">none</span><span class="s6">;</span>
+  <span class="s3">pointer-events</span><span class="s4">: </span><span class="s8">auto</span><span class="s6">;</span>
+  <span class="s3">cursor</span><span class="s4">: </span><span class="s8">pointer</span><span class="s6">;</span>
+  <span class="s3">will-change</span><span class="s4">: </span><span class="s2">transform</span><span class="s6">;</span>
+  <span class="s3">transition</span><span class="s4">:</span>
+    <span class="s2">transform </span><span class="s7">0.1</span><span class="s8">s </span><span class="s9">cubic-bezier</span><span class="s1">(</span><span class="s7">0</span><span class="s6">, </span><span class="s7">0</span><span class="s6">, </span><span class="s7">0.31</span><span class="s6">, </span><span class="s7">1</span><span class="s1">)</span><span class="s6">,</span>
+    <span class="s8">opacity </span><span class="s7">0.2</span><span class="s8">s </span><span class="s9">cubic-bezier</span><span class="s1">(</span><span class="s7">0</span><span class="s6">, </span><span class="s7">0</span><span class="s6">, </span><span class="s7">0.31</span><span class="s6">, </span><span class="s7">1</span><span class="s1">)</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">expando__content </span><span class="s1">{</span>
+  <span class="s3">position</span><span class="s4">: </span><span class="s8">absolute</span><span class="s6">;</span>
+  <span class="s3">left</span><span class="s4">: </span><span class="s2">-</span><span class="s7">10</span><span class="s8">px</span><span class="s6">;</span>
+  <span class="s3">top</span><span class="s4">: </span><span class="s2">-</span><span class="s7">10</span><span class="s8">px</span><span class="s6">;</span>
+  <span class="s3">pointer-events</span><span class="s4">: </span><span class="s8">none</span><span class="s6">;</span>
+  <span class="s3">opacity</span><span class="s4">: </span><span class="s7">0</span><span class="s6">;</span>
+  <span class="s3">will-change</span><span class="s4">: </span><span class="s2">transform</span><span class="s6">;</span>
+  <span class="s3">transform</span><span class="s4">: </span><span class="s9">translateY</span><span class="s1">(</span><span class="s7">20</span><span class="s8">px</span><span class="s1">)</span><span class="s6">;</span>
+  <span class="s3">transition</span><span class="s4">:</span>
+    <span class="s2">transform </span><span class="s7">0.3</span><span class="s8">s </span><span class="s9">cubic-bezier</span><span class="s1">(</span><span class="s7">0</span><span class="s6">, </span><span class="s7">0</span><span class="s6">, </span><span class="s7">0.31</span><span class="s6">, </span><span class="s7">1</span><span class="s1">)</span><span class="s6">,</span>
+    <span class="s8">opacity </span><span class="s7">0.3</span><span class="s8">s </span><span class="s9">cubic-bezier</span><span class="s1">(</span><span class="s7">0</span><span class="s6">, </span><span class="s7">0</span><span class="s6">, </span><span class="s7">0.31</span><span class="s6">, </span><span class="s7">1</span><span class="s1">)</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">expando__close </span><span class="s1">{</span>
+  <span class="s3">position</span><span class="s4">: </span><span class="s8">absolute</span><span class="s6">;</span>
+  <span class="s3">right</span><span class="s4">: </span><span class="s7">10</span><span class="s8">px</span><span class="s6">;</span>
+  <span class="s3">top</span><span class="s4">: </span><span class="s7">10</span><span class="s8">px</span><span class="s6">;</span>
+  <span class="s3">outline</span><span class="s4">: </span><span class="s8">none</span><span class="s6">;</span>
+  <span class="s3">border</span><span class="s4">: </span><span class="s8">none</span><span class="s6">;</span>
+  <span class="s3">background</span><span class="s4">: </span><span class="s8">none</span><span class="s6">;</span>
+  <span class="s3">cursor</span><span class="s4">: </span><span class="s8">pointer</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">expando__content-list </span><span class="s1">{</span>
+  <span class="s3">width</span><span class="s4">: </span><span class="s7">140</span><span class="s8">px</span><span class="s6">;</span>
+  <span class="s3">margin</span><span class="s4">: </span><span class="s7">0</span><span class="s6">;</span>
+  <span class="s3">padding</span><span class="s4">: </span><span class="s7">30</span><span class="s8">px </span><span class="s7">0 20</span><span class="s8">px </span><span class="s7">0</span><span class="s6">;</span>
+  <span class="s3">list-style</span><span class="s4">: </span><span class="s8">none</span><span class="s6">;</span>
+  <span class="s3">overflow</span><span class="s4">: </span><span class="s8">hidden</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s2">li </span><span class="s1">{</span>
+  <span class="s3">line-height</span><span class="s4">: </span><span class="s7">1.9</span><span class="s6">;</span>
+  <span class="s3">padding</span><span class="s4">: </span><span class="s7">0 20</span><span class="s8">px</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s2">li</span><span class="s4">:</span><span class="s2">hover </span><span class="s1">{</span>
+  <span class="s3">background</span><span class="s4">: </span><span class="s5">#555</span><span class="s6">;</span>
+  <span class="s3">color</span><span class="s4">: </span><span class="s5">#FFF</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">item--expanded </span><span class="s1">{</span>
+  <span class="s3">animation-name</span><span class="s4">: </span><span class="s2">expandAnimation</span><span class="s6">;</span>
+  <span class="s3">animation-duration</span><span class="s4">: </span><span class="s7">0.7</span><span class="s8">s</span><span class="s6">;</span>
+  <span class="s3">animation-timing-function</span><span class="s4">: </span><span class="s8">linear</span><span class="s6">;</span>
+  <span class="s3">animation-fill-mode</span><span class="s4">: </span><span class="s8">forwards</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">item__contents--expanded </span><span class="s1">{</span>
+  <span class="s3">animation-name</span><span class="s4">: </span><span class="s2">expandContentsAnimation</span><span class="s6">;</span>
+  <span class="s3">animation-duration</span><span class="s4">: </span><span class="s7">0.7</span><span class="s8">s</span><span class="s6">;</span>
+  <span class="s3">animation-timing-function</span><span class="s4">: </span><span class="s8">linear</span><span class="s6">;</span>
+  <span class="s3">animation-fill-mode</span><span class="s4">: </span><span class="s8">forwards</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">item--collapsed </span><span class="s1">{</span>
+  <span class="s3">animation-name</span><span class="s4">: </span><span class="s2">collapseAnimation</span><span class="s6">;</span>
+  <span class="s3">animation-duration</span><span class="s4">: </span><span class="s7">0.2</span><span class="s8">s</span><span class="s6">;</span>
+  <span class="s3">animation-timing-function</span><span class="s4">: </span><span class="s8">linear</span><span class="s6">;</span>
+  <span class="s3">animation-fill-mode</span><span class="s4">: </span><span class="s8">forwards</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">item__contents--collapsed </span><span class="s1">{</span>
+  <span class="s3">animation-name</span><span class="s4">: </span><span class="s2">collapseContentsAnimation</span><span class="s6">;</span>
+  <span class="s3">animation-duration</span><span class="s4">: </span><span class="s7">0.2</span><span class="s8">s</span><span class="s6">;</span>
+  <span class="s3">animation-timing-function</span><span class="s4">: </span><span class="s8">linear</span><span class="s6">;</span>
+  <span class="s3">animation-fill-mode</span><span class="s4">: </span><span class="s8">forwards</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">item__contents--expanded </span><span class="s1">.</span><span class="s2">expando__content </span><span class="s1">{</span>
+  <span class="s3">transform</span><span class="s4">: </span><span class="s9">translateY</span><span class="s1">(</span><span class="s7">0</span><span class="s8">px</span><span class="s1">)</span><span class="s6">;</span>
+  <span class="s3">opacity</span><span class="s4">: </span><span class="s7">1</span><span class="s6">;</span>
+  <span class="s3">pointer-events</span><span class="s4">: </span><span class="s8">auto</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">item__contents--expanded </span><span class="s1">.</span><span class="s2">expando__btn </span><span class="s1">{</span>
+  <span class="s3">transform</span><span class="s4">: </span><span class="s9">rotate</span><span class="s1">(</span><span class="s7">180</span><span class="s8">deg</span><span class="s1">)</span><span class="s6">;</span>
+  <span class="s3">opacity</span><span class="s4">: </span><span class="s7">0</span><span class="s6">;</span>
+  <span class="s3">pointer-events</span><span class="s4">: </span><span class="s8">none</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s0">/* ========================================================================== 
+   Helper classes 
+   ========================================================================== */</span>
+<span class="s0">/* 
+ * Hide visually and from screen readers 
+ */</span>
+<span class="s1">.</span><span class="s2">hidden</span><span class="s6">,</span>
+<span class="s1">[</span><span class="s2">hidden</span><span class="s1">] {</span>
+  <span class="s3">display</span><span class="s4">: </span><span class="s8">none </span><span class="s11">!important</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s0">/* 
+ * Hide only visually, but have it available for screen readers: 
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility 
+ * 
+ * 1. For long content, line feeds are not interpreted as spaces and small width 
+ *    causes content to wrap 1 word per line: 
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe 
+ */</span>
+
+<span class="s1">.</span><span class="s2">sr-only </span><span class="s1">{</span>
+  <span class="s3">border</span><span class="s4">: </span><span class="s7">0</span><span class="s6">;</span>
+  <span class="s3">clip</span><span class="s4">: </span><span class="s9">rect</span><span class="s1">(</span><span class="s7">0</span><span class="s6">, </span><span class="s7">0</span><span class="s6">, </span><span class="s7">0</span><span class="s6">, </span><span class="s7">0</span><span class="s1">)</span><span class="s6">;</span>
+  <span class="s3">height</span><span class="s4">: </span><span class="s7">1</span><span class="s8">px</span><span class="s6">;</span>
+  <span class="s3">margin</span><span class="s4">: </span><span class="s2">-</span><span class="s7">1</span><span class="s8">px</span><span class="s6">;</span>
+  <span class="s3">overflow</span><span class="s4">: </span><span class="s8">hidden</span><span class="s6">;</span>
+  <span class="s3">padding</span><span class="s4">: </span><span class="s7">0</span><span class="s6">;</span>
+  <span class="s3">position</span><span class="s4">: </span><span class="s8">absolute</span><span class="s6">;</span>
+  <span class="s3">white-space</span><span class="s4">: </span><span class="s8">nowrap</span><span class="s6">;</span>
+  <span class="s3">width</span><span class="s4">: </span><span class="s7">1</span><span class="s8">px</span><span class="s6">;</span>
+  <span class="s0">/* 1 */</span>
+<span class="s1">}</span>
+
+<span class="s0">/* 
+ * Extends the .sr-only class to allow the element 
+ * to be focusable when navigated to via the keyboard: 
+ * https://www.drupal.org/node/897638 
+ */</span>
+
+<span class="s1">.</span><span class="s2">sr-only</span><span class="s1">.</span><span class="s2">focusable</span><span class="s4">:</span><span class="s2">active</span><span class="s6">,</span>
+<span class="s1">.</span><span class="s2">sr-only</span><span class="s1">.</span><span class="s2">focusable</span><span class="s4">:</span><span class="s2">focus </span><span class="s1">{</span>
+  <span class="s3">clip</span><span class="s4">: </span><span class="s8">auto</span><span class="s6">;</span>
+  <span class="s3">height</span><span class="s4">: </span><span class="s8">auto</span><span class="s6">;</span>
+  <span class="s3">margin</span><span class="s4">: </span><span class="s7">0</span><span class="s6">;</span>
+  <span class="s3">overflow</span><span class="s4">: </span><span class="s8">visible</span><span class="s6">;</span>
+  <span class="s3">position</span><span class="s4">: </span><span class="s8">static</span><span class="s6">;</span>
+  <span class="s3">white-space</span><span class="s4">: </span><span class="s8">inherit</span><span class="s6">;</span>
+  <span class="s3">width</span><span class="s4">: </span><span class="s8">auto</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s0">/* 
+ * Hide visually and from screen readers, but maintain layout 
+ */</span>
+
+<span class="s1">.</span><span class="s2">invisible </span><span class="s1">{</span>
+  <span class="s3">visibility</span><span class="s4">: </span><span class="s8">hidden</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s0">/* 
+ * Clearfix: contain floats 
+ * 
+ * For modern browsers 
+ * 1. The space content is one way to avoid an Opera bug when the 
+ *    `contenteditable` attribute is included anywhere else in the document. 
+ *    Otherwise it causes space to appear at the top and bottom of elements 
+ *    that receive the `clearfix` class. 
+ * 2. The use of `table` rather than `block` is only necessary if using 
+ *    `:before` to contain the top-margins of child elements. 
+ */</span>
+
+<span class="s1">.</span><span class="s2">clearfix</span><span class="s4">::</span><span class="s2">before</span><span class="s6">,</span>
+<span class="s1">.</span><span class="s2">clearfix</span><span class="s4">::</span><span class="s2">after </span><span class="s1">{</span>
+  <span class="s3">content</span><span class="s4">: </span><span class="s10">&quot; &quot;</span><span class="s6">;</span>
+  <span class="s3">display</span><span class="s4">: </span><span class="s8">table</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">clearfix</span><span class="s4">::</span><span class="s2">after </span><span class="s1">{</span>
+  <span class="s3">clear</span><span class="s4">: </span><span class="s8">both</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s0">/* ========================================================================== 
+   EXAMPLE Media Queries for Responsive Design. 
+   These examples override the primary ('mobile first') styles. 
+   Modify as content requires. 
+   ========================================================================== */</span>
+
+<span class="s12">@media </span><span class="s2">only </span><span class="s8">screen </span><span class="s2">and </span><span class="s1">(</span><span class="s3">min-width</span><span class="s4">: </span><span class="s7">35</span><span class="s8">em</span><span class="s1">) {</span>
+  <span class="s0">/* Style adjustments for viewports that meet the condition */</span>
+<span class="s1">}</span>
+
+<span class="s12">@media </span><span class="s2">print</span><span class="s6">,</span>
+<span class="s1">(</span><span class="s3">-webkit-min-device-pixel-ratio</span><span class="s4">: </span><span class="s7">1.25</span><span class="s1">)</span><span class="s6">,</span>
+<span class="s1">(</span><span class="s2">min-resolution</span><span class="s4">: </span><span class="s7">1.25</span><span class="s2">dppx</span><span class="s1">)</span><span class="s6">,</span>
+<span class="s1">(</span><span class="s2">min-resolution</span><span class="s4">: </span><span class="s7">120</span><span class="s2">dpi</span><span class="s1">) {</span>
+  <span class="s0">/* Style adjustments for high resolution devices */</span>
+<span class="s1">}</span>
+
+<span class="s0">/* ========================================================================== 
+   Print styles. 
+   Inlined to avoid the additional HTTP request: 
+   https://www.phpied.com/delay-loading-your-print-css/ 
+   ========================================================================== */</span>
+
+<span class="s12">@media </span><span class="s2">print </span><span class="s1">{</span>
+  <span class="s1">*</span><span class="s6">,</span>
+  <span class="s1">*</span><span class="s4">::</span><span class="s2">before</span><span class="s6">,</span>
+  <span class="s1">*</span><span class="s4">::</span><span class="s2">after </span><span class="s1">{</span>
+    <span class="s3">background</span><span class="s4">: </span><span class="s5">#fff </span><span class="s11">!important</span><span class="s6">;</span>
+    <span class="s3">color</span><span class="s4">: </span><span class="s5">#000 </span><span class="s11">!important</span><span class="s6">;</span>
+    <span class="s0">/* Black prints faster */</span>
+    <span class="s3">box-shadow</span><span class="s4">: </span><span class="s8">none </span><span class="s11">!important</span><span class="s6">;</span>
+    <span class="s3">text-shadow</span><span class="s4">: </span><span class="s8">none </span><span class="s11">!important</span><span class="s6">;</span>
+  <span class="s1">}</span>
+
+  <span class="s2">a</span><span class="s6">,</span>
+  <span class="s2">a</span><span class="s4">:</span><span class="s2">visited </span><span class="s1">{</span>
+    <span class="s3">text-decoration</span><span class="s4">: </span><span class="s8">underline</span><span class="s6">;</span>
+  <span class="s1">}</span>
+
+  <span class="s2">a</span><span class="s1">[</span><span class="s2">href</span><span class="s1">]</span><span class="s4">::</span><span class="s2">after </span><span class="s1">{</span>
+    <span class="s3">content</span><span class="s4">: </span><span class="s10">&quot; (&quot; </span><span class="s9">attr</span><span class="s1">(</span><span class="s2">href</span><span class="s1">) </span><span class="s10">&quot;)&quot;</span><span class="s6">;</span>
+  <span class="s1">}</span>
+
+  <span class="s2">abbr</span><span class="s1">[</span><span class="s2">title</span><span class="s1">]</span><span class="s4">::</span><span class="s2">after </span><span class="s1">{</span>
+    <span class="s3">content</span><span class="s4">: </span><span class="s10">&quot; (&quot; </span><span class="s9">attr</span><span class="s1">(</span><span class="s2">title</span><span class="s1">) </span><span class="s10">&quot;)&quot;</span><span class="s6">;</span>
+  <span class="s1">}</span>
+
+  <span class="s0">/* 
+   * Don't show links that are fragment identifiers, 
+   * or use the `javascript:` pseudo protocol 
+   */</span>
+  <span class="s2">a</span><span class="s1">[</span><span class="s2">href^=</span><span class="s10">&quot;#&quot;</span><span class="s1">]</span><span class="s4">::</span><span class="s2">after</span><span class="s6">,</span>
+  <span class="s2">a</span><span class="s1">[</span><span class="s2">href^=</span><span class="s10">&quot;javascript:&quot;</span><span class="s1">]</span><span class="s4">::</span><span class="s2">after </span><span class="s1">{</span>
+    <span class="s3">content</span><span class="s4">: </span><span class="s10">&quot;&quot;</span><span class="s6">;</span>
+  <span class="s1">}</span>
+
+  <span class="s2">pre </span><span class="s1">{</span>
+    <span class="s3">white-space</span><span class="s4">: </span><span class="s8">pre-wrap </span><span class="s11">!important</span><span class="s6">;</span>
+  <span class="s1">}</span>
+
+  <span class="s2">pre</span><span class="s6">,</span>
+  <span class="s2">blockquote </span><span class="s1">{</span>
+    <span class="s3">border</span><span class="s4">: </span><span class="s7">1</span><span class="s8">px solid </span><span class="s5">#999</span><span class="s6">;</span>
+    <span class="s3">page-break-inside</span><span class="s4">: </span><span class="s8">avoid</span><span class="s6">;</span>
+  <span class="s1">}</span>
+
+  <span class="s0">/* 
+   * Printing Tables: 
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables 
+   */</span>
+  <span class="s2">thead </span><span class="s1">{</span>
+    <span class="s3">display</span><span class="s4">: </span><span class="s8">table-header-group</span><span class="s6">;</span>
+  <span class="s1">}</span>
+
+  <span class="s2">tr</span><span class="s6">,</span>
+  <span class="s2">img </span><span class="s1">{</span>
+    <span class="s3">page-break-inside</span><span class="s4">: </span><span class="s8">avoid</span><span class="s6">;</span>
+  <span class="s1">}</span>
+
+  <span class="s2">p</span><span class="s6">,</span>
+  <span class="s2">h2</span><span class="s6">,</span>
+  <span class="s2">h3 </span><span class="s1">{</span>
+    <span class="s3">orphans</span><span class="s4">: </span><span class="s7">3</span><span class="s6">;</span>
+    <span class="s3">widows</span><span class="s4">: </span><span class="s7">3</span><span class="s6">;</span>
+  <span class="s1">}</span>
+
+  <span class="s2">h2</span><span class="s6">,</span>
+  <span class="s2">h3 </span><span class="s1">{</span>
+    <span class="s3">page-break-after</span><span class="s4">: </span><span class="s8">avoid</span><span class="s6">;</span>
+  <span class="s1">}</span>
+<span class="s1">}</span>
+
+</pre>
+</body>
+</html>
