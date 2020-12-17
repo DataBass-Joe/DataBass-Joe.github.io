@@ -198,7 +198,7 @@ class Expando {
     this._el = document.querySelector('.js-expando');
     this._elInner = this._el.querySelector('.js-expando-inner');
     this._elInnerInverter = this._el.querySelector('.js-expando-inner-inverter');
-    this._expandBtn = this._el.querySelector('.js-expando-expand-btn');
+    this._expandBtn = document.querySelector('.js-expando-expand-btn');
     this._collapseBtn = this._el.querySelector('.js-expando-collapse-btn');
     this._content = this._el.querySelector('.js-content');
 
@@ -254,6 +254,7 @@ class Expando {
 
     this._elInner.classList.add('item--collapsed');
     this._elInnerInverter.classList.add('item__contents--collapsed');
+
   }
 
   _calculate () {
