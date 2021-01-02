@@ -196,11 +196,11 @@ document.getElementById("attack-table").addEventListener("click", function () {
 class Expando {
   constructor () {
     this._el = document.querySelector('.js-expando');
-    this._elInner = this._el.querySelector('.js-expando-inner');
-    this._elInnerInverter = this._el.querySelector('.js-expando-inner-inverter');
+    this._elInner = document.querySelector('.js-expando-inner');
+    this._elInnerInverter = document.querySelector('.js-expando-inner-inverter');
     this._expandBtn = document.querySelector('.js-expando-expand-btn');
-    this._collapseBtn = this._el.querySelector('.js-expando-collapse-btn');
-    this._content = this._el.querySelector('.js-content');
+    this._collapseBtn = document.querySelector('.js-expando-collapse-btn');
+    this._content = document.querySelector('.js-content');
 
     this.toggle = this.toggle.bind(this);
     this.expand = this.expand.bind(this);
@@ -242,6 +242,8 @@ class Expando {
     this._elInner.classList.remove('item--collapsed');
     this._elInnerInverter.classList.remove('item__contents--expanded');
     this._elInnerInverter.classList.remove('item__contents--collapsed');
+    this._expandBtn.classList.remove('item__contents--expanded2');
+
 
     // Force a recalc styles here so the classes take hold.
     window.getComputedStyle(this._elInner).transform;
@@ -249,6 +251,8 @@ class Expando {
     if (expand) {
       this._elInner.classList.add('item--expanded');
       this._elInnerInverter.classList.add('item__contents--expanded');
+      this._expandBtn.classList.add('item__contents--expanded2');
+
       return;
     }
 

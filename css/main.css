@@ -180,14 +180,14 @@ body {
 }
 
 * {
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
 }
 
 .expando {
   border-radius: 2px;
   overflow: hidden;
-  top: 20px;
-  left: 20px;
+  /*top: 20px;*/
+  /*left: 20px;*/
   will-change: transform;
   }
 
@@ -244,7 +244,7 @@ body {
 }
 
 .expando__content-list {
-  width: 140px;
+  width: 40px;
   margin: 0;
   padding: 30px 0 20px 0;
   list-style: none;
@@ -296,10 +296,14 @@ li:hover {
   pointer-events: auto;
 }
 
-.item__contents--expanded .expando__btn {
+.item__contents--expanded2 {
   transform: rotate(180deg);
-  opacity: 0;
   pointer-events: none;
+}
+
+
+.quiet {
+  /*width:0;*/
 }
 
 /* ==========================================================================
