@@ -189,6 +189,13 @@ document.getElementById("attack-table").addEventListener("click", function () {
 });
 
 
+con.connect(function(err) {
+  if (err) throw err;
+  con.query("select description_formatted from spell where id = 40;", function (err, result, fields) {
+    if (err) throw err;
+    document.getElementById("database-test").innerHTML = result;
+  });
+});
 
 
 
